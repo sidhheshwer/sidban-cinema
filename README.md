@@ -187,20 +187,18 @@ docker run -p 8080:8080 sidban-cinema
 # 📸 Screenshots
 
 
-# 📸 Screenshots
-
 ## 🔐 Sign In Page
 ![Sign In Page](screenshots/sidban-des-sign.png)
 
 ---
 
 ## 🔑 Login Page
-![Login Page](screenshots/sidban-des-alert.png)
+![Login Page](screenshots/sidban-des-login.png)
 
 ---
 
 ## 🛡️ Sidban Alert
-![Sidban Alert](screenshots/login.png)
+![Sidban Alert](screenshots/sidban-des-alert.png)
 
 ---
 
