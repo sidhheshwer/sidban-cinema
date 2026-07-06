@@ -1,0 +1,55 @@
+.footerContainer {
+
+  background: #000000;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+ 
+  margin-top: 100px;
+}
+
+.footerBrand h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.brandRed {
+  color: #ff2b2b;
+}
+
+.footerBrand p {
+  color: #9ca3af;
+  font-size: 0.95rem;
+  max-width: 500px;
+  margin: 0 auto 20px;
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.footerLinks a {
+  color: #d1d5db;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+  transition: 0.2s ease;
+}
+
+.footerLinks a:hover {
+  color: #ff2b2b;
+  transform: translateY(-2px);
+}
+
+.footerBottom {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: #6b7280;
+}

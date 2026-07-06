@@ -1,0 +1,64 @@
+# ================= BACKEND (Spring Boot) =================
+backend/target/
+backend/.mvn/
+backend/mvnw
+backend/mvnw.cmd
+backend/uploads/
+
+# IDE files (backend)
+backend/.idea/
+backend/*.iml
+
+# Logs
+*.log
+
+# Spring local config (optional)
+backend/src/main/resources/application-local.properties
+
+
+# ================= FRONTEND (React - CRA) =================
+frontend/node_modules/
+frontend/build/
+frontend/coverage/
+frontend/.env*
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.production.local
+
+
+
+# ================= IDE (GLOBAL) =================
+.idea/
+.vscode/
+*.iml
+
+
+# ================= OS FILES =================
+.DS_Store
+Thumbs.db
+
+
+# ================= LOG FILES =================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# ================= ENV FILES =================
+backend/.env
+frontend/.env*
+.env
+
+
+.env
+application.properties
+
+.env
+.env.local
+application-secret.properties
+
+backend/uploads/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,463 @@
+.episodesBtn {
+  position: fixed;
+  bottom: 15%;
+  right: 2%;
+
+  padding: 12px 18px;
+
+  color: white;
+  border-radius: 10px;
+
+  font-size: 2rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  z-index: 900;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  transition: opacity 0.5s ease;
+}
+.episodesBtn:hover{
+  border: 1px solid red;
+}
+
+.seasonDate{
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+.episodePanel {
+  position: fixed;
+
+  top: 0;
+  right: -100%;
+
+  width: 500px;
+  max-width: 90vw;
+
+  height: 100vh;
+
+    top: 5%;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+
+  color: white;
+
+  z-index: 900;
+
+  overflow-y: auto;
+
+  padding: 20px;
+
+
+    overflow: hidden;
+
+  transition: right 0.4s ease;
+}
+
+.activeSeason{
+  background-color: #e50914;
+  color: white;
+  border: 2px solid white;
+}
+
+
+
+
+.episodePanel.open {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-content: center;
+  gap: 5%;
+  right: 5%;
+   background-size: cover;
+  background-position:end;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  
+}
+.epHeadDiv{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: -1%;
+  padding: 2%;
+  margin-top: -2%;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  z-index: 9;
+}
+
+
+.closeEpisodePanel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+
+  width: 100%;
+
+  padding: 10px;
+  margin-bottom: 20px;
+
+  cursor: pointer;
+}
+
+.closeEpisodePanel h4 {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  margin: 0;
+}
+
+.closePanel {
+  font-size: 2rem;
+  color: white;
+  flex-shrink: 0;
+}
+.closePanel:hover{
+
+  color: rgb(255, 0, 0);
+}
+
+
+
+.episodeDiv {
+  height: 30vh;
+  overflow-y: auto;
+}
+
+.seasonButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10%;
+  height: auto;
+  overflow-x: auto;
+  padding: 5%;
+ width:100%;
+
+
+
+}
+
+.seasonDetail{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+}
+.seasonPara {
+  max-height: 300px; 
+  overflow: hidden;
+
+  overflow-y: auto;
+  transition: max-height 1s ease-in-out;
+}
+
+.noSeasonPara {
+  max-height: 0;
+  overflow: hidden;
+ 
+
+  transition: max-height 1s ease-in-out;
+}
+.seasonRead{
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.695);
+}
+.seasonRead:hover{
+  color: white;
+}
+.seasonBtn{
+ 
+  background-color: rgba(0, 0, 0, 0.711);
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-left: 2%;
+  padding: 2%;
+  border-radius: 10%;
+  text-align: center;
+
+  
+}
+.seriesTitle{
+   font-size: 1.5rem;
+   font-weight: bolder;
+   color: rgba(255, 0, 0, 0.678);
+}
+.seriesDateDiv{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+.seriesDateIcon{
+  opacity: 0.8;
+  margin-right: 2%;
+}
+.seriesSeasons{
+  font-size: 1rem;
+  color: rgb(255, 115, 0);
+}
+
+
+.episodeBtn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 10%;
+
+  background: rgba(10, 10, 10, 0.462);
+
+  color: white;
+
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-size: 1.5rem;
+
+}
+.episodeBtnNone{
+  display: none;
+}
+.epPlay{
+  font-size: 1.5rem;
+}
+.epName{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  width: 50%;
+  font-size: 1rem;
+
+
+}
+.epHead{
+  font-size: 1rem;
+  font-weight:bold;
+  color: rgba(255, 255, 255, 0.648);
+  margin-left: 2%;
+}
+.epListIcon{
+    font-size: 1rem;
+  font-weight:bold;
+  color: rgba(255, 255, 255, 0.59);
+}
+.epIcon{
+  font-size: 1.5rem;
+    margin-right: 5%;
+  color: rgb(218, 110, 32);
+}
+
+.seasonBtn:hover{
+  border: 1px solid red;
+  background-color: rgb(255, 77, 0);
+}
+.episodeBtn:hover{
+   border: 1px solid red;
+}
+
+.episodeList {
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.episodeList:has(div:hover) div:not(:hover){
+  opacity: 0.3;
+  filter: blur(2px);
+}
+
+.episodeList div:hover{
+  transform: scale(0.9);
+
+
+}
+.episodePanelHeader{
+   display:flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   justify-content: start;
+   align-items: start;
+   gap: 2%;
+
+    padding: 5%;
+
+
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  scroll-snap-align: start;
+  margin-top: 0%;
+  padding-top: 0%;
+  border-radius: 10px;
+
+
+
+}
+.seasonIcon{
+
+  margin-top: 5%;
+  font-size: 1.5rem;
+}
+.seasonNumber{
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .episodePanel {
+    width: 55vw;
+    height: 90vh;
+    margin-top: 0%;
+    overflow-y: auto;
+  }
+
+  .episodesBtn {
+    font-size: 2rem;
+    padding: 10px 16px;
+  }
+ .episodePanelHeader{
+    height:100%;
+    overflow-y: auto;
+ }
+
+
+}
+
+
+@media (max-width: 768px) {
+  .episodesBtn {
+    bottom: 15%;
+    right: 3%;
+   
+
+    font-size: 2rem;
+    padding: 10px 14px;
+  }
+
+  .episodePanel {
+    width: 100vw;
+
+    height: 100vh;
+
+    top: 0%;
+
+    padding: 15px;
+
+
+  }
+
+   .seasonButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10%;
+  height: auto;
+  overflow-x: auto;
+  padding: 5%;
+  width:100%;
+
+
+}
+
+
+.seasonBtn{
+  
+  background-color: rgba(0, 0, 0, 0.711);
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-left: 2%;
+  padding: 5%;
+  border-radius: 25%;
+    width: 100%;
+}
+ 
+  .episodeBtn {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .closeEpisodePanel {
+    font-size: 1.3rem;
+  }
+
+}
+
+
+
+@media (max-width: 480px) {
+  .episodesBtn {
+    right: 4%;
+    bottom: 15%;
+
+    font-size: 2rem;
+
+    padding: 8px 12px;
+  }
+
+  .episodePanel {
+    width: 95vw;
+
+    height: 95vh;
+
+    margin-top: 15%;
+
+    padding: 12px;
+  }
+
+  .seasonBtn,
+  .episodeBtn {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  .closeEpisodePanel {
+    font-size: 1.1rem;
+  }
+
+  .seasonDiv {
+    height: 12vh;
+  }
+
+  .episodeDiv {
+    height: 40vh;
+  }
+}

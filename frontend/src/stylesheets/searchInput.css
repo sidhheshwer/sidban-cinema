@@ -1,0 +1,283 @@
+.searchInputDiv {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.searchInput {
+  width: 100%;
+  height: 55px;
+
+  padding: 0 20px;
+
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 14px;
+
+  background: rgba(20,20,20,0.95);
+  color: white;
+
+  font-size: 1rem;
+
+  outline: none;
+
+  backdrop-filter: blur(10px);
+
+  transition: all 0.3s ease;
+}
+
+.searchInput:focus {
+  border-color: #e50914;
+  box-shadow: 0 0 20px rgba(229,9,20,0.3);
+}
+
+.searchInput::placeholder {
+  color: #9ca3af;
+}
+
+.searchResultDiv {
+  position: absolute;
+  top: 65px;
+  left: 0;
+
+  width: 100%;
+  max-height:70vh ;
+
+  overflow-y: auto;
+
+  background: #0000009a;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+
+  border-radius: 14px;
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.326);
+
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.searchResultDiv::-webkit-scrollbar {
+  width: 5px;
+}
+
+.searchResultDiv::-webkit-scrollbar-thumb {
+  background: #ff000d8b;
+  border-radius: 10px;
+}
+.searchingDiv{
+    display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 5%;
+  margin-bottom: 5%;
+}
+
+.searchCard {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  gap: 2%;
+  margin-bottom: 5%;
+  padding: 5%;
+
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  transition: all 0.3s ease;
+   border-radius: 10px;
+
+  margin-bottom: 0%;
+  overflow-y: scroll;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.searchCard:hover {
+  background: rgba(0, 0, 0, 0.848);
+}
+
+.searchPoster {
+  width: 100px;
+  height: 100%;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+}
+
+.searchDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  gap: 5px;
+  padding-left: 5%;
+  color: rgba(255, 0, 0, 0.873);
+}
+
+.searchDetails h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.searchDate {
+  color: #9ca3af;
+  font-size: 0.85rem;
+}
+
+.searchRating {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  
+  color: #ff7300;
+  font-size: 0.9rem;
+
+}
+
+.searchError,
+.searchEmpty {
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1rem;
+  border-radius: 12px;
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.searchError {
+  color: #ff4d4d;
+}
+
+
+.searchLoader{
+    width:100%;
+    padding:1rem;
+    text-align:center;
+    color:#ffffff;
+    font-size:0.9rem;
+}
+
+.searchLoader::after{
+    content:"";
+    display:inline-block;
+    width:16px;
+    height:16px;
+    margin-left:10px;
+    border:2px solid #ffffff50;
+    border-top:2px solid #ff2b2b;
+    border-radius:50%;
+    animation: spin 0.8s linear infinite;
+}
+.searchCardDiv{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: start;
+  padding: 2%;
+  width: 100%;
+  overflow-y: auto;
+ 
+}
+.searchCardHead{
+  font-size:0.9rem;
+  margin-left: 2%;
+  padding: 0%;
+  opacity: 0.3;
+  
+ 
+
+
+}
+.searchPlay{
+
+ 
+
+  color: white;
+}
+.searchPlayDiv{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+ font-size: 2rem;
+
+}
+.searchReadMore{
+  color:  white;
+}
+.serachOverviewDiv{
+
+  width: 100%;
+
+  padding: 0%;
+ overflow: hidden;
+ font-size: 0.9rem;
+ padding: 2%;
+  transition: max-height 1s ease, opacity 1s ease;
+}
+
+
+
+.openSearchOverview{
+ 
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 1s ease-in;
+  margin-left: 2%;
+}
+
+.closeSearchOverview{
+
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-in;
+    margin-left: 2%;
+}
+
+.searchHeadLogo{
+       display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:start;
+    align-items: center;
+    
+
+}
+
+.sidbanAIDiv3{
+        display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+     font-size: 1rem;
+     background-color: rgb(0, 0, 0);
+     border-radius: 10px;
+     padding: 2%;
+}
+@keyframes spin{
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+@media screen and (min-width:786px) {
+  .searchInputDiv {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+}

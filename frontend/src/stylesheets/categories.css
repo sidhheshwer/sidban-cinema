@@ -1,0 +1,394 @@
+.categoryDiv{
+    width: 100vw;
+    height: auto;
+   
+}
+.catHeadDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    padding: 0%;
+    width: 100%;
+    height: 50px;
+     background: linear-gradient(to right, rgba(255, 0, 0, 0.244), transparent);
+}
+.catLine{
+    width: 2px;
+    height:50px;
+    
+    background-color: red;
+    
+    
+}
+.catHead{
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 2%;
+    color: rgb(180, 170, 174);
+    
+  
+}
+.catMoviesDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 10%;
+   width: 100%;
+   height: 100%;
+    padding: 2%;
+   margin-bottom: 5%;
+   overflow-x: auto;
+}
+.mainMoviesDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:start;
+    align-items: end;
+  width: 30%;
+  height: 60vh;
+  
+  border-radius: 10px;
+  padding-left: 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.catMovieHead{
+    font-size: 2rem;
+}
+
+.catMovieDetails{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    width: 85vw;
+    height: auto;
+   padding: 5%;
+    
+    overflow: hidden;
+   background:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.64) 15%,
+      rgba(0, 0, 0, 0.4) 50%,
+      rgba(0, 0, 0, 0.1) 100%
+    );
+}
+.catVoteDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+   padding: 0%;
+   width: 100%;
+   height: 50px;
+
+}
+.catvotes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    width: auto;
+    height: auto;
+   font-size: 1rem;
+   
+}
+.openDiv {
+  max-height: 20vh;
+  overflow-y: auto;
+
+  transition: max-height 1s ease-in-out;
+}
+
+.closeDiv {
+  max-height: 0;
+  overflow-y: auto;
+  transition: max-height 1s ease-in-out;
+}
+.starIcon{
+font-size: 1rem;
+    color: rgb(255, 204, 0);
+   
+}
+.likeIcon{
+    font-size: 1rem;
+    color: rgb(81, 255, 0);
+}
+.dateIcon{
+  font-size: 1rem;
+    color: rgb(188, 23, 23);
+}
+.readMoreIcon{
+ color: rgba(255, 255, 255, 0.416);
+}
+.readMoreIcon:hover{
+    color: white;
+}
+.playReadDivMain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+   width: 100%;
+   font-size:2rem;
+}
+.playReadDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+   width: 30%;
+   font-size:2rem;
+   
+    
+  
+}
+.viewCat{
+    text-align: end;
+    width: 100%;
+
+    padding: 1rem;
+    color: rgba(255, 136, 0, 0.832);
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    
+}
+.viewCat:hover{
+    color: rgb(255, 248, 248);
+}
+
+.genres{
+
+   color: rgb(255, 115, 0);
+    width: 100%;
+    font-size: 1rem;
+    padding-top: 2%;
+}
+.sidbanAIDiv2{
+        display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}
+.sidbanGeners{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+
+@media screen and (max-width:786px) {
+    .categoryDiv{
+    width: 100vw;
+    height: auto;
+
+}
+.catHeadDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    padding: 0%;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 2%;
+     background: linear-gradient(to right, rgba(255, 0, 0, 0.296),rgba(82, 3, 3, 0.175), transparent);
+}
+.catLine{
+    width: 5px;
+    height:50px;
+    
+    background-color: rgba(255, 0, 0, 0.663);
+    
+    
+}
+.catHead{
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 2%;
+    
+  
+}
+
+.genres{
+ 
+   
+    width: 100%;
+    font-size: 1.5rem;
+}
+.mainMoviesDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:start;
+    align-items: end;
+  width: 100%;
+  height: 70vh;
+   
+  border-radius: 30px;
+  padding-left: 0%;
+  margin-left: 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.catMovieHead{
+    font-size: 2rem;
+    color: rgba(255, 0, 0, 0.762);
+}
+
+.catMovieDetails{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    width: 95vw;
+    height: 40vh;
+    
+   padding: 5%;
+      border-radius: 30px;
+    overflow: hidden;
+    background:linear-gradient( to top,
+      rgb(0, 0, 0) 15%,
+      rgba(0, 0, 0, 0.412) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+ 
+}
+.catVoteDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+   padding: 0%;
+   width: 100%;
+   height: 50px;
+
+}
+.catvotes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    width: auto;
+    height: auto;
+   font-size: 1rem;
+   
+}
+.openDiv {
+  max-height: 20vh;
+  overflow-y: auto;
+
+  transition: max-height 1s ease-in-out;
+}
+
+.closeDiv {
+  max-height: 0;
+  overflow-y: auto;
+  transition: max-height 1s ease-in-out;
+}
+
+
+}
+
+
+@media screen and (max-width:786px) and (orientation: landscape) {
+.mainMoviesDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:start;
+    align-items: end;
+  width: 60%;
+  height: 90vh;
+
+  border-radius: 10px;
+  padding-left: 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.catMovieDetails{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    width: 85vw;
+    height: auto;
+   padding: 5%;
+    
+    
+    background:linear-gradient( to top,
+      rgb(0, 0, 0) 15%,
+      rgba(0, 0, 0, 0.412) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    overflow:hidden ;
+ 
+}
+}
+
+
+@media screen and (max-width:1000px ) and (orientation: landscape) {
+.mainMoviesDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:start;
+    align-items: end;
+  width: 60%;
+  height: 90vh;
+
+  border-radius: 10px;
+  padding-left: 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.catMovieDetails{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    width: 85vw;
+    height: auto;
+   padding: 5%;
+    
+    
+    background:linear-gradient( to top,
+      rgb(0, 0, 0) 15%,
+      rgba(0, 0, 0, 0.412) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    overflow:hidden ;
+ 
+}
+}

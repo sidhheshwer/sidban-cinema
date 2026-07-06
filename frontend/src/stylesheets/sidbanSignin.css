@@ -1,0 +1,178 @@
+.sidbanSignMain{
+       min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.sidbanSignDiv{
+  display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 5%;
+
+    width: 30vw;
+    min-height: auto;
+    padding: 2%;
+    background-color: rgba(40, 36, 36, 0.379);
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+}
+.sidbanSignHead{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 2%;
+  margin-bottom: 5%;
+}
+
+.sidbanSignIcon{
+    font-size: 1.5rem;
+    color: red;
+}
+.sidbanSignForm{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.sidbanInput{
+    width: 90%;
+    height: 50px;
+    background-color: rgba(34, 33, 33, 0.675);
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    padding: 1%;
+   
+
+}
+
+
+
+.sidbanSignBtn{
+    width: 70%;
+    height: 50px;
+    background-color: rgba(110, 20, 20, 0.558);
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.sidbanSignBtn:hover{
+   color: rgba(255, 0, 0, 0.777);
+    background-color: rgba(95, 87, 87, 0.737);
+
+}
+
+
+.alreadyDiv{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  margin: 2%;
+}
+.alText1{
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 200;
+
+ 
+}
+
+.alText1:hover{
+  color: rgba(85, 81, 79, 0.79);
+}
+.alText2{
+ color: red;
+}
+.alText2:hover{
+  color: white;
+  cursor: pointer;
+}
+.profilePicDiv{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+   width: 90%;
+}
+
+.fileUploadLabel {
+  background: linear-gradient(to left, rgb(0, 0, 0),rgb(0, 0, 0), rgba(160, 0, 0, 0.515));
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight:500;
+  transition: 0.3s;
+  font-size: 0.9rem;
+  margin-right: 2%;
+  padding: 2%;
+ 
+}
+
+.fileUploadLabel:hover {
+  transform: scale(1.03);
+}
+.fileName{
+  font-family: 0.9rem;
+  font-weight: 100;
+}
+.signFooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: center;
+   width: 100%;
+
+   padding-top: 5%;
+   font-size: 0.8rem;
+   opacity: 0.5;
+}
+.signSidbanAI{
+  color: rgb(147, 141, 141);
+}
+.signSidbanAIIcon{
+  color: red;
+   font-size: 0.8rem;
+}
+@media (max-width: 1024px) {
+  .sidbanSignDiv {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidbanSignDiv {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidbanSignDiv {
+    width: 90vw;
+  }
+}

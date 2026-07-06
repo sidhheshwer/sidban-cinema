@@ -1,0 +1,188 @@
+.loaderDiv{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,100%);
+    grid-template-rows: repeat(auto-fit,70vh);
+    justify-content: center;
+    grid-gap: 5%;
+    padding: 2%;
+    width: 100vw;
+    height: 100vh;
+    font-size: larger;
+    margin-top: 0%;
+    margin-bottom: 20%;
+    overflow-y: auto;
+  
+   
+}
+
+.loadLogo{
+      width: 100%;
+    height: auto;
+    margin-left: 3%;
+    font-size: 0.9rem;
+    opacity: 0.2;
+    padding-left: 1%;
+    font-weight: 500;
+   
+}
+.loadItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    height: 70vh;
+    padding: 1%;
+       background: linear-gradient(
+        90deg,
+        #111111 0%,
+        #1f1f1f 30%,
+        #2b2b2b 50%,
+        #1f1f1f 70%,
+        #111111 100%
+    );
+    border-radius:10px;
+    background-size: 300% 100%;
+
+    animation: flashLoader 3s infinite linear;
+}
+
+.loadLine1{
+    width: 50%;
+    height: 20px;
+    margin: 2%;
+    border-radius: 10px;
+      background: linear-gradient(
+        90deg,
+        #111111 0%,
+        #1f1f1f 30%,
+        #6805055f 50%,
+        #1f1f1f 70%,
+        #111111 100%
+    );
+
+    background-size: 300% 100%;
+
+    animation: flashLoaderLines 5s infinite linear;
+}
+.loadLine2{
+    width: 80%;
+    height: 20px;
+    margin: 2%;
+    border-radius: 10px;
+     background: linear-gradient(
+        90deg,
+        #111111 0%,
+        #1f1f1f 30%,
+      #6805055f 50%,
+        #1f1f1f 70%,
+        #111111 100%
+    );
+
+    background-size: 300% 100%;
+
+    animation: flashLoaderLines 5s infinite linear;
+}
+.loadLine3{
+    width: 95%;
+    height: 50px;
+    margin: 2%;
+    border-radius: 10px;
+   
+     background: linear-gradient(
+        90deg,
+        #111111 0%,
+        #1f1f1f 30%,
+             #6805055f 50%,
+        #1f1f1f 70%,
+        #111111 100%
+    );
+
+    background-size: 300% 100%;
+
+    animation: flashLoaderLines 5s infinite linear;
+}
+.loadPlayDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+     
+}
+.loadPlayBtn{
+    width: 50px;
+    height: 50px;
+    margin: 2%;
+    border-radius: 50%;
+    color: grey;
+    opacity: 0.2;
+}
+.loadReadBtn{
+    width: 50px;
+    height: 50px;
+    margin: 2%;
+    border-radius: 50%;
+    color: grey;
+    opacity: 0.2;
+}
+
+@keyframes flashLoaderLines {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+
+
+@keyframes flashLoader {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+
+@media screen and (min-width:786px){
+     .loaderDiv{
+ 
+     display: grid;
+    grid-template-columns: repeat(auto-fit,350px);
+    grid-template-rows: repeat(auto-fit,70vh);
+    justify-content: center;
+    grid-gap: 20%;
+    padding: 2%;
+    width: 100vw;
+    height: 100vh;
+    font-size: larger;
+    margin-top: 5%;
+    overflow-y: auto;
+  
+  
+   
+}
+}
+
+@media screen and (min-width:786px ) and (orientation: landscape){
+     .loaderDiv{
+ 
+     display: grid;
+    grid-template-columns: repeat(auto-fit,250px);
+    grid-template-rows: repeat(auto-fit,70vh);
+    justify-content: center;
+    grid-gap: 5%;
+    padding: 2%;
+    width: 100vw;
+    height: 100vh;
+    font-size: larger;
+    margin-top: 8%;
+    overflow-y: auto;
+   
+}
+}

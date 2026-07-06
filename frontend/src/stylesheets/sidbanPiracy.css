@@ -1,0 +1,224 @@
+.sidbanPiracyDiv{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-direction: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto 0px auto;
+    background-color: rgba(35, 32, 32, 0.589);
+    z-index: 5000;
+    backdrop-filter: blur(5px);
+   
+ 
+
+}
+.sidbanPiracyMain{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 80vh;
+     background-color: rgba(10, 10, 10, 0.601);
+    border-radius: 10px;
+    padding: 2%;
+    
+       border: 1px solid rgba(255, 0, 0, 0.516);
+}
+.piracyHeadDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.piracyHead{
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+.piracyHeadIcon{
+       font-size: 1.5rem;
+    opacity: 0.8;
+    color: red; 
+}
+
+.piracyBtn{
+    width: 50%;
+    height: 50px;
+    font-size: 1.2rem;
+    border: 1px solid red;
+    border-radius: 10px;
+    color: white;
+    margin-top: 5%;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+.piracyBtn:hover{
+
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 10px;
+    color: rgb(246, 0, 0);
+    margin-top: 5%;
+    cursor: pointer;
+    background-color: rgba(95, 89, 89, 0.54);
+    
+}
+.piracyAlertHead{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+.piracyMessageDiv{
+    background-color: rgba(255, 0, 0, 0.36);
+    border-radius: 10px;
+    overflow-y: auto;
+    scrollbar-width: none;
+  
+}
+
+.piracyDev{
+    font-size: 1rem;
+    text-align: center;
+    color: #ff0000;
+    padding: 5%;
+    font-weight: bolder;
+    animation:glowUp 2s ease infinite;
+}
+
+@keyframes glowUp {
+    0%{
+        opacity: 0.5;
+        color: red;
+    }
+    50%{
+        opacity: 1;
+    }
+    50%{
+       opacity: 0.5;
+         color: red;
+    }
+    75%{
+         opacity: 1;
+    }
+    100%{
+       opacity: 0.5;
+         color: red;
+    }
+}
+.piracyMessage{
+    background-color: rgba(36, 35, 35, 0.442);
+    backdrop-filter: blur(2px);
+     border-radius: 10px;
+      padding: 2%;
+}
+
+.piracy-disclaimer {
+  color: #ffffff;
+  padding: 0px;
+  border-radius: 12px;
+  line-height: 1.2;
+  font-size: 1rem;
+  font-family:'Courier New', Courier, monospace;
+}
+.piracyPara{
+    margin-bottom: 2%;
+}
+.sidSignDiv{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: end;
+    align-content: end;
+    align-items: center;
+    width: 100%;
+}
+.sidbanSignature{
+    width: 100px;
+    height: 100px;
+}
+
+.alertLines{
+   width: 100%;
+   height: 1px;
+    background-color: rgba(255, 0, 0, 0.341);
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width:786px){
+  .sidbanPiracyMain{
+    width: 90vw;
+    height: auto;
+    background-color: rgba(10, 10, 10, 0.601);
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    padding: 5%;
+}  
+
+
+.piracyHead{
+    font-size: 1rem;
+    opacity: 0.8;
+}
+.piracyHeadIcon{
+       font-size: 1rem;
+    opacity: 0.8;
+    color: red; 
+}
+
+.piracyAlertHead{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+.piracy-disclaimer {
+  color: #ffffff;
+  padding: 0px;
+  border-radius: 12px;
+  line-height: 1.2;
+  font-size: 1rem;
+  font-family:'Courier New', Courier, monospace;
+}
+}
+
+@media screen and (max-width:986px) and (orientation:landscape ){
+  .sidbanPiracyMain{
+    width: 90vw;
+    height: 80vh;
+    background-color: rgba(10, 10, 10, 0.601);
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    padding: 5%;
+    overflow-y: auto;
+}  
+
+}
+
+
+@media screen and (max-width:480px){
+  .sidbanPiracyMain{
+    width: 90vw;
+    height: auto;
+    background-color: rgba(10, 10, 10, 0.601);
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    padding: 5%;
+
+} 
+
+.piracyMessage{
+    height: 50vh;
+    background-color: rgba(36, 35, 35, 0.442);
+    backdrop-filter: blur(2px);
+     border-radius: 10px;
+      padding: 2%;
+      overflow-y: auto;
+      scrollbar-width: none;
+}
+}

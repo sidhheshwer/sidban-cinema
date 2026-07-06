@@ -1,0 +1,288 @@
+
+.aboutContainer {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 3rem 8%;
+  color: white;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.97),
+      rgba(10, 10, 10, 0.98)
+    );
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin-top: 5%;
+}
+
+
+
+.aboutHero {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.aboutLogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.aboutLogo h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.banText {
+  color: #ff0000;
+}
+
+.aboutIcon {
+  color: #ff0000;
+  font-size: 3rem;
+}
+
+.aboutTagline {
+  max-width: 800px;
+
+  margin: auto;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+
+
+.aboutSection {
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgb(255, 0, 0);
+
+  border-radius: 20px;
+
+  padding: 2rem;
+
+  margin-bottom: 2rem;
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.35),
+    0 0 20px rgba(255, 0, 0, 0.05);
+
+  transition: 0.3s ease;
+}
+
+.aboutSection:hover {
+  transform: translateY(-4px);
+
+  border-color: rgb(255, 0, 0);
+}
+
+.aboutSection h2 {
+  color: #ff0000;
+
+  font-size: 1.8rem;
+
+  margin-bottom: 1rem;
+}
+
+.aboutSection p {
+  color: rgba(255, 255, 255, 0.85);
+
+  line-height: 1.9;
+
+  margin-bottom: 1rem;
+
+  font-size: 1rem;
+}
+
+
+.aboutSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.aboutSection li {
+  padding: 12px 15px;
+
+  margin-bottom: 10px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  border-radius: 12px;
+
+  border-left: 2px solid #ff0000;
+
+  transition: 0.3s ease;
+}
+
+.aboutSection li:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+
+.piracySection {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.piracySection h2 {
+  color: #ff0000;
+}
+
+
+.developerNote {
+  text-align: center;
+}
+
+.quoteDiv{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+.quote {
+  width: 100%;
+  font-size: 1.2rem;
+
+  font-style: italic;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  margin: 0rem 0;
+
+  padding: 0.5rem;
+
+  border-left: 5px solid #ff9500;
+
+  background: rgba(255, 255, 255, 0.03);
+}
+.quoteSub{
+  width: 100%;
+  text-align: end;
+
+}
+
+
+.aboutSidbanButton{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 50px;
+   border: 1px solid red;
+   border-radius: 10px;
+}
+
+.aboutSidbanButton:hover{
+ background-color: rgb(40, 38, 38);
+}
+@media (max-width: 992px) {
+  .aboutContainer {
+    padding: 2rem 5%;
+    margin-top: 10%;
+  }
+
+  .aboutLogo h1 {
+    font-size: 2.8rem;
+  }
+
+  .aboutIcon {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutLogo {
+      display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0px;
+  width: 100%;
+
+  }
+
+  .aboutLogo h1 {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+
+  .aboutTagline {
+    font-size: 1rem;
+  }
+
+  .aboutSection {
+    padding: 1.5rem;
+  }
+
+  .aboutSection h2 {
+    font-size: 1.5rem;
+  }
+
+  .aboutSection p {
+    font-size: 0.95rem;
+  }
+}
+.aboutSidbanButton{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 50px;
+   border: 1px solid red;
+   border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+  .aboutContainer {
+    padding: 1.2rem;
+     margin-top: 15%;
+  }
+
+  .aboutLogo h1 {
+    font-size: 1.9rem;
+  }
+
+  .aboutIcon {
+    font-size: 2rem;
+  }
+
+  .aboutSection {
+    padding: 1.2rem;
+    border-radius: 15px;
+  }
+
+  .quote {
+    font-size: 1rem;
+  }
+  .aboutSidbanButton{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 50px;
+   border: 1px solid red;
+   border-radius: 10px;
+}
+}

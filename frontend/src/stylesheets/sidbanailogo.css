@@ -1,0 +1,165 @@
+
+.logoContainer {
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.6rem;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+.logoText{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logoI {
+    margin-left: 5px;
+  color: white;
+}
+
+/* Intelligence text */
+.logoText2 {
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 0;
+  opacity: 0;
+  animation: logoexpandAndBack 15s ease forwards infinite;
+}
+
+
+
+
+.logoA {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  transform-origin: left;
+  animation: removelogoA 15s ease forwards infinite;
+}
+
+.logoContainer {
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.6rem;
+  overflow: hidden;
+  gap: 0; /* ensures no spacing */
+  
+}
+
+
+.logoText2 {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+}
+
+.logoText1 {
+    font-weight: 700;
+  font-size: 1.6rem;
+  color: red;
+  text-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+.logoIcon {
+  font-size: 1.8rem;
+  color: #960404dd;
+  margin-left: 8px;
+  
+  transition: transform 0.3s ease;
+}
+
+.logoIcon:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.logo {
+
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  width: 100%;
+
+   padding: 10px;
+   
+ 
+
+  
+  
+
+  z-index: 900;
+  
+}
+
+.logo4{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+font-size: 1.6rem;
+  font-weight: 700;
+    width: 100%;
+    padding: 1px;
+  
+  
+ 
+}
+
+/* A disappears then comes back */
+@keyframes removelogoA {
+  0% {
+    width: 1ch;
+    opacity: 1;
+  }
+
+  40% {
+    width: 0;
+    opacity: 0; /* remove A */
+  }
+
+  70% {
+    width: 0;
+    opacity: 0;
+  }
+
+  100% {
+    width: 1ch;
+    opacity: 1; /* bring back A */
+  }
+  
+}
+
+
+/* Intelligence expands then disappears */
+@keyframes logoexpandAndBack {
+  0% {
+    max-width: 0;
+    opacity: 0;
+  }
+
+  40% {
+    max-width: 200px;
+    opacity: 1; /* show Intelligence */
+  }
+
+  70% {
+    max-width: 200px;
+    opacity: 1;
+  }
+
+  100% {
+    max-width: 0;
+    opacity: 0; /* hide again */
+  }
+}
+
+.logoContainer span {
+  transition: all 0.3s ease;
+}

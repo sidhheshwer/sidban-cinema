@@ -1,0 +1,341 @@
+
+
+.navDiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 50vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+  
+
+
+    gap: 1rem;
+    padding: 1rem;
+    margin-left: 5%;
+    background-color: rgba(0, 0, 0, 0.448);
+    backdrop-filter: blur(10px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1200;
+
+    transition:transform 0.35s ease,opacity 0.35s ease;
+}
+
+
+
+.navOpen {
+    transform: translateX(-15%);
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+
+.navClosed {
+    transform: translateX(-100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+
+
+
+.closeNav {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+.closeNav:hover {
+   color: red;
+}
+
+
+
+.navDiv  {
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+
+.navHeader {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+   text-align: center;
+
+
+}
+
+
+.navButtonDiv{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 1.5rem;
+    margin-bottom: 10%;
+    margin-top: 0%;
+    padding-top: 0%;
+   
+}
+.navBtn{
+    width: 80%;
+    text-align: center;
+    opacity: 0.7;
+}
+.navBtn:hover{
+    transform: scale(1.5);
+    transition: 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.userDetailsDiv{
+      display: flex;
+    flex-direction: row;
+    justify-content:start;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+
+    background-size: cover;
+    background-position:center;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
+    padding: 2%;
+  
+}
+
+.userProfilePic{
+    width: 100px;
+    height: 100px;
+     border-radius: 50%;
+     object-fit: cover;
+     border: 2px solid rgba(255, 0, 0, 0.663);
+     margin-right: 10%;
+     margin-left: 5%;
+      flex-shrink: 0;
+}
+.userLogDiv{
+   display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: start;
+   width: 100%;
+    padding: 0%;
+    gap: 0.5rem; 
+    
+}
+.userUsername{
+
+  color: red;
+}
+.logBtnDiv{
+      display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+
+    width: 100%;
+
+
+}
+
+.userLogBtn{
+   font-size: 1rem;
+   cursor: pointer;
+}
+.userLogBtn:hover{
+    color: red;
+}
+.userIcon{
+     font-size: 0.9rem;
+ color: rgb(255, 123, 0);
+}
+.userNameDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+
+    
+}
+
+.logoutIcon{
+     font-size: 1.5rem;
+  color: rgba(255, 0, 0, 0.61);
+}
+.userGreetDiv{
+    width: 100%;
+
+}
+.userUsername{
+  font-size: 1rem;
+}
+.userGreet{
+    color: rgb(226, 221, 221);
+   font-size: 1.2rem;
+}
+
+.userProfilePic:hover {
+    transform: scale(1.08);
+    border-color: rgb(255, 89, 0);
+}
+
+.logNavDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+.navHisDiv{
+        display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.navHistoryBtn{
+   width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+ 
+}
+
+.navHistoryBtn:hover{
+    color: red;
+}
+.hisIcon{
+  font-size: 1.5rem;
+  color: rgba(255, 0, 0, 0.61);
+}
+@media screen and (max-width: 786px) {
+
+   
+
+
+    
+
+.navDiv {
+  width: 100%;
+}
+
+
+
+.navOpen {
+    transform: translateX(-5%);
+    opacity: 1;
+    pointer-events: all;
+    
+}
+
+
+
+.navClosed {
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+    
+}
+
+
+
+
+
+
+.closeNav {
+    position: absolute;
+
+    top: 20px;
+
+       font-size: 2rem;
+        right: 20px;
+
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+.closeNav:hover {
+   color: red;
+}
+
+
+
+}
+
+@media screen and (max-width: 786px) and (orientation: landscape) {
+    .navDiv {
+    
+     gap: 2rem;
+    background-color: rgba(0, 0, 0, 0.684);
+}
+.navHeader {
+  margin-top: 2%;
+  width: 100%;
+}
+.closeNav {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+
+.navButtonDiv{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 0.5rem;
+    
+   
+}
+.navBtn{
+    width: 80%;
+    text-align: center;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.navBtn:hover{
+    transform: scale(1.5);
+    transition: 0.5s ease-in-out;
+    opacity: 1;
+}
+
+}

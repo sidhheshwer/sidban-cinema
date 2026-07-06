@@ -1,0 +1,119 @@
+.errorContainer {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: #0d0d0d;
+}
+
+.errorCard {
+  width: min(90%, 420px);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+
+  background: rgb(0, 0, 0);
+  backdrop-filter: blur(12px);
+
+
+
+
+}
+
+.errorHead {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+.banText {
+  color: #ff2e2e;
+}
+
+.errorCode {
+  font-size: clamp(4rem, 10vw, 6rem);
+  color: #ff2e2e;
+  margin: 0;
+  animation: pulse 1.5s infinite;
+}
+
+.errorSub {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.errorMessage {
+  margin-top: 1rem;
+  color: #bdbdbd;
+  line-height: 1.6;
+}
+
+.errorBtn {
+  margin-top: 1.5rem;
+  padding: 0.9rem 1.8rem;
+
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  background: #181718;
+  color: white;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: transform 0.3s ease;
+}
+
+.errorBtn:hover {
+  transform: translateY(-2px);
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.293);
+  }
+
+  50% {
+    opacity: 0.6;
+    text-shadow: 0 0 30px rgba(255, 0, 0, 0.336);
+  }
+
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+  }
+}
+
+@media (max-width: 480px) {
+  .errorCard {
+    padding: 1.5rem;
+  }
+
+  .errorMessage {
+    font-size: 0.95rem;
+  }
+
+  .errorBtn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 786px) and (orientation: landscape) {
+  .errorCard {
+      width: min(90%, 420px);
+
+    padding: 1rem;
+  }
+
+  .errorMessage {
+    font-size: 0.95rem;
+  }
+
+  .errorBtn {
+    width: 100%;
+  }
+}
